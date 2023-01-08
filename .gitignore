@@ -1,0 +1,9 @@
+# Ignore caches
+.pytest_cache/
+.DS_Store
+.cache/
+.mypy_cache/
+.idea/
+
+# Ignore virtual env
+venv
