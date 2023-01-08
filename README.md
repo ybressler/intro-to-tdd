@@ -118,6 +118,9 @@ def test_get_user_name_(stubbed_input):
 ```
 🎉 Tada!
 
+> Note: There are some extra tests in [`test_user_input.py`](user_input/tests/test_user_input.py),
+> so you should def take a look there and poke around and have fun.
+
 ----
 
 ### 2. Next Thing to test
