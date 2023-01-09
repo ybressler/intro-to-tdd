@@ -1,6 +1,23 @@
 # Intro to Test Driven Development
 How to write code well using tests (first).
 
+# Getting started:
+* Create a virtual environment
+* Install dependencies
+* Run tests
+
+```bash
+# Create and activate a virtual env
+python3 -m venv venv
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Now run tests
+python -m pytest
+```
+
 
 ## Functionality
 Let's start with a project that has some abstract purpose,
