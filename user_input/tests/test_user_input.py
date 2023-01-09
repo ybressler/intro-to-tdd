@@ -1,37 +1,8 @@
 """Test methods for user input"""
-from typing import Optional, Dict
 import pytest
 
-from user_input.interface import BaseInput
 from user_input.user_input import get_user_name
-
-
-class StubbedInput(BaseInput):
-    """
-    Stubbed input class, stores mocked responses and
-    serves them instead of asking the user for input
-    """
-
-    def __init__(self, mocked_responses: Dict[str, str] = {}):
-        self.mocked_responses = mocked_responses
-
-    def input(self, prompt: str) -> Optional[str]:
-        """
-        Returns a value from mocked responses, if the prompt is already stored.
-        Otherwise, returns None
-        """
-        return self.mocked_responses.get(prompt)
-
-
-@pytest.fixture()
-def stubbed_input():
-    """Returns stubbed input class"""
-    return StubbedInput(
-        # The following is a bit brittle, maybe we can bolster
-        mocked_responses={
-            "What is your name?": "Test User"
-        }
-    )
+from user_input.tests.stubs import stubbed_input  # import to activate the fixture
 
 
 def test_get_user_name_1(stubbed_input):
