@@ -1,6 +1,15 @@
 # Intro to Test Driven Development
 How to write code well using tests (first).
 
+
+<!--- Hidden for redundency
+[![Intro to Test Driven Development](https://img.youtube.com/vi/JA2N1Id_npg/0.jpg)](https://www.youtube.com/watch?v=JA2N1Id_npg "Intro to Test Driven Development")
+-->
+
+### Watch Youtube Tutorial
+[![Intro to Test Driven Development](https://markdown-videos.vercel.app/youtube/JA2N1Id_npg)]([https://youtu.be/JA2N1Id_npg](https://www.youtube.com/watch?v=JA2N1Id_npg "Intro to Test Driven Development"))
+
+
 # Getting started:
 * Create a virtual environment
 * Install dependencies
